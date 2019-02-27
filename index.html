@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LandingPage</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
-    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
+
 <body>
-    <main>
-        <section id="header"></section>
-        <section id="providing"></section>
+    <main id="main">
+        <section id="header">
+            <div id="headerContacts">
+                <div class="phone"><i class="fas fa-mobile-alt"></i><span>+380552228877</span></div>
+                <div class="email"><i class="far fa-envelope"></i><span>landing@gmail.com</span></div>
+            </div>
+            <nav class="navigation">
+                <img src="/images/logo.png" alt="logo">
+                <div class="header_Home"><a href="#home">Home</a></div>
+                <div class="header_About"><a href="#about">About Us</a></div>
+                <div class="header_Approach"><a href="#approach">Our Approach</a></div>
+                <div class="header_Work"><a href="#ourWork">Our Work</a></div>
+                <button id="consultation_button_nav">Free Consultation</button>
+            </nav>
+        </section>
+        <section id="home"></section>
         <section id="about"></section>
         <section id="ourApproach"></section>
         <section id="ourWork"></section>
         <section id="inTouch"></section>
     </main>
 </body>
+
 </html>
