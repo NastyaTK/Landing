@@ -1,0 +1,103 @@
+@font-face{
+  font-family: "fontawesome";
+  src: url(/fonts/fontawesome.woff)
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "fontawesome"
+}
+#main{
+  width: 100%;
+}
+/* Header */
+#header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  font-size: 16px;
+}
+#headerContacts{
+  width: 100%;
+  display: flex;
+  background: rgba(172, 172, 172, 0.5);
+  justify-content: flex-end;
+}
+i{
+  margin: 0 3px 0 3px;
+}
+.email{
+  margin: 5px 100px 5px 0;
+}
+.phone{
+  margin: 5px 10px 5px 0;
+} 
+.navigation{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+}
+a{
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(71, 71, 71);
+}
+a :visited{
+  text-decoration: none;
+  color: rgb(243, 74, 13);
+}
+.navigation img{
+  margin-right: 100px;
+}
+.navigation div{
+  margin: 0 14px 0 14px;
+}
+#consultation_button_nav{
+  color: white;
+  background-color: rgb(243, 74, 13);
+  border-radius: 7px;
+  border: 0 solid transparent;
+  padding: 7px 15px 7px 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+/*Home*/
+#home{
+  background: url(/images/hero-bg.jpg);
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 590px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+h1{
+  font-size: 45px;
+  margin: 5px;
+}
+.home_text{
+  font-size: 35px;
+}
+#consultation_button{
+  color: white;
+  background-color: rgb(236, 211, 70);
+  border-radius: 7px;
+  border: 0 solid transparent;
+  padding: 11px 40px 11px 40px;
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+/* Approach */
+#ourApproach{
+  position: relative;
+}
