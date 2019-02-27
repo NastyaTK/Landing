@@ -12,7 +12,7 @@ html, body{
 }
 /* Header */
 #header{
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   font-size: 16px;
@@ -58,9 +58,46 @@ a :visited{
 #consultation_button_nav{
   color: white;
   background-color: rgb(243, 74, 13);
-  border-radius: 3%;
+  border-radius: 7px;
   border: 0 solid transparent;
   padding: 7px 15px 7px 15px;
   margin-left: 20px;
   cursor: pointer;
+}
+/*Home*/
+#home{
+  background: url(/images/hero-bg.jpg);
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 590px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+h1{
+  font-size: 45px;
+  margin: 5px;
+}
+.home_text{
+  font-size: 35px;
+}
+#consultation_button{
+  color: white;
+  background-color: rgb(236, 211, 70);
+  border-radius: 7px;
+  border: 0 solid transparent;
+  padding: 11px 40px 11px 40px;
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+/* Approach */
+#ourApproach{
+  position: relative;
 }
