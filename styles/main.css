@@ -90,6 +90,9 @@ h1{
 .home_text{
   font-size: 35px;
 }
+#home_header{
+  text-align: center;
+}
 #consultation_button{
   color: white;
   background-color: rgb(238, 193, 70);
@@ -103,7 +106,48 @@ h1{
   margin: 30px;
 }
 
-/* Approach */
-#ourApproach{
+/* About */
+#about{
   position: relative;
+  font-family: 'elvetica-neue-regular';
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(71, 71, 71);
+  padding: 40px 0 40px 0;
+}
+.about_header{
+  text-align: center;
+}
+h2{
+  font-size: 40px;
+  margin: 5px;
+}
+.about_text{
+  font-size: 30px;
+}
+.underscore{
+  height: 5px;
+  color: rgb(71, 71, 71);
+  background: rgb(71, 71, 71);
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#services{
+  display: flex;
+  justify-content: center;
+
+}
+.like, .book, .message{
+  width: 18%;
+  text-align: center;
+  margin-right: 15px;
+}
+.message{
+  margin-right: 0;
 }
