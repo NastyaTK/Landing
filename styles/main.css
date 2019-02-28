@@ -106,8 +106,8 @@ h1{
   margin: 30px;
 }
 
-/* About */
-#about{
+/* General */
+.section{
   position: relative;
   font-family: 'elvetica-neue-regular';
   display: flex;
@@ -118,14 +118,14 @@ h1{
   color: rgb(71, 71, 71);
   padding: 40px 0 40px 0;
 }
-.about_header{
+.section_header{
   text-align: center;
 }
-h2{
+.h2_section_header{
   font-size: 40px;
   margin: 5px;
 }
-.about_text{
+.text_section_header{
   font-size: 30px;
 }
 .underscore{
@@ -138,6 +138,8 @@ h2{
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+/* About */
 #services{
   display: flex;
   justify-content: center;
@@ -150,4 +152,62 @@ h2{
 }
 .message{
   margin-right: 0;
+}
+/* Approach */
+#ourApproach{
+  background: rgb(228, 228, 228);
+}
+.approach_elements{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.steps{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.approach_elements .steps:nth-child(even){
+  flex-direction: row-reverse;
+}
+.approach_elements .steps:nth-child(even) .steps_text{
+  margin: 0 0 0 10%;
+  text-align: right;
+}
+.approach_elements .steps:nth-child(odd) .steps_text{
+  margin: 0 10% 0 0;
+  text-align: left;
+}
+.steps_text{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.steps_heading{
+  margin: 0 0 10px 0;
+}
+.step_number_red{
+  color: white;
+  background-color: rgb(243, 74, 13);
+  border: 2px solid white;
+  border-radius: 7px;
+  position: absolute;
+  padding: 10px 23px 10px 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.step_number_red .number{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.approach_elements .steps:nth-child(even) .step_number_red{
+  right: 25.5%;
+}
+.approach_elements .steps:nth-child(odd) .step_number_red{
+  left: 25.5%;
 }
