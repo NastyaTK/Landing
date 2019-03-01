@@ -1,5 +1,6 @@
 @font-face{
   font-family: "fontawesome";
+  /* TODO: make with single quotes */
   src: url(/fonts/fontawesome.woff)
 }
 @font-face{
@@ -15,6 +16,7 @@ html, body{
   width: 100%;
 }
 /* Header */
+/* TODO: replace all id's with class names */
 #header{
   position: relative;
   top: 0;
@@ -28,6 +30,7 @@ html, body{
   justify-content: flex-end;
   padding: 10px 0 10px 0;
 }
+/* TODO: use only if you sure that it is needed globally, in other case use class or namespace */
 i{
   margin: 0 3px 0 3px;
 }
@@ -125,9 +128,14 @@ h1{
   font-size: 40px;
   margin: 5px;
 }
+/* TODO: Use postfix with -- to mark that class have different value for some property, use it as multiclass */
+.h2_section_header--blue {
+color: blue;
+}
 .text_section_header{
   font-size: 30px;
 }
+/* TODO: Make better naming of classes (not one word) */
 .underscore{
   height: 5px;
   color: rgb(71, 71, 71);
