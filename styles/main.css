@@ -12,18 +12,18 @@ html, body{
   padding: 0;
   font-family: "fontawesome"
 }
-#main{
+.main-block{
   width: 100%;
 }
 /* Header */
 /* TODO: replace all id's with class names */
-#header{
+.header-section{
   position: relative;
   top: 0;
   width: 100%;
   font-size: 16px;
 }
-#headerContacts{
+.header-contacts{
   width: 100%;
   display: flex;
   background: rgba(172, 172, 172, 0.5);
@@ -31,23 +31,23 @@ html, body{
   padding: 10px 0 10px 0;
 }
 /* TODO: use only if you sure that it is needed globally, in other case use class or namespace */
-i{
+.header-icon{
   margin: 0 3px 0 3px;
 }
-.email{
-  margin: 5px 100px 5px 0;
-}
-.phone{
+.header-contacts :first-child{
   margin: 5px 15px 5px 0;
+}
+.header-contacts div:nth-of-type(2){
+  margin: 5px 100px 5px 0;
 } 
-.navigation{
+.navigation-bar{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0 30px 0;
 }
-a{
+.navigation-bar a{
   text-decoration: none;
   font-weight: bolder;
   font-size: 18px;
@@ -57,13 +57,13 @@ a :visited{
   text-decoration: none;
   color: rgb(243, 74, 13);
 }
-.navigation img{
+.navigation-bar .page-logo{
   margin-right: 100px;
 }
-.navigation div{
+.navigation-bar .navigation-link{
   margin: 0 14px 0 14px;
 }
-#consultation_button_nav{
+.consultation-button-nav{
   color: white;
   background-color: rgb(243, 74, 13);
   border-radius: 7px;
@@ -73,7 +73,7 @@ a :visited{
   cursor: pointer;
 }
 /*Home*/
-#home{
+.home-section{
   background: url(/images/hero-bg.jpg);
   background-size: cover;
   display: flex;
@@ -86,17 +86,14 @@ a :visited{
   color: white;
   font-family: "helvetica-neue-regular";
 }
-h1{
+.home-section .section-header .section-name{
   font-size: 45px;
   margin: 5px;
 }
-.home_text{
+.home-section .section-header .section-description{
   font-size: 35px;
 }
-#home_header{
-  text-align: center;
-}
-#consultation_button{
+.consultation-button{
   color: white;
   background-color: rgb(238, 193, 70);
   border-radius: 7px;
@@ -121,22 +118,23 @@ h1{
   color: rgb(71, 71, 71);
   padding: 40px 0 40px 0;
 }
-.section_header{
+.section-header{
   text-align: center;
 }
-.h2_section_header{
+.section-name{
   font-size: 40px;
   margin: 5px;
 }
 /* TODO: Use postfix with -- to mark that class have different value for some property, use it as multiclass */
-.h2_section_header--blue {
+.section-name--blue {
 color: blue;
 }
-.text_section_header{
+.section-description{
+  margin: 0;
   font-size: 30px;
 }
 /* TODO: Make better naming of classes (not one word) */
-.underscore{
+.section-underscore{
   height: 5px;
   color: rgb(71, 71, 71);
   background: rgb(71, 71, 71);
@@ -148,29 +146,29 @@ color: blue;
 }
 
 /* About */
-#services{
+.services{
   display: flex;
   justify-content: center;
 
 }
-.like, .book, .message{
+.services-item{
   width: 18%;
-  text-align: center;
+  text-align: center;     
   margin-right: 15px;
 }
-.message{
+.services-item div:last-of-type{
   margin-right: 0;
 }
 /* Approach */
-#ourApproach{
+.our-approach-section{
   background: rgb(228, 228, 228);
 }
-.approach_elements{
+.approach-items{
   display: flex;
   flex-direction: column;
   width: 70%;
 }
-.steps{
+.approach-step{
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -179,26 +177,43 @@ color: blue;
   align-items: center;
   position: relative;
 }
-.approach_elements .steps:nth-child(even){
+.approach-items .approach-step:nth-child(even){
   flex-direction: row-reverse;
 }
-.approach_elements .steps:nth-child(even) .steps_text{
+.approach-items .approach-step:nth-child(even) .approach-step-text{
   margin: 0 0 0 10%;
   text-align: right;
 }
-.approach_elements .steps:nth-child(odd) .steps_text{
+.approach-items .approach-step:nth-child(odd) .approach-step-text{
   margin: 0 10% 0 0;
   text-align: left;
 }
-.steps_text{
+.approach-items .approach-step:nth-child(odd) .approach-step-image .approach-step-order{
+  position: absolute;
+  right: 0;
+  transform: translate(50%, 0);
+}
+.approach-items .approach-step:nth-child(even) .approach-step-image .approach-step-order{
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.approach-step-text{
   display: flex;
   width: 50%;
   flex-direction: column;
 }
-.steps_heading{
+.approach-step-description{
+  margin: 0;
+}
+.approach-step-heading{
   margin: 0 0 10px 0;
 }
-.step_number_red{
+.approach-step-image{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.approach-step-order{
   color: white;
   background-color: rgb(243, 74, 13);
   border: 2px solid white;
@@ -208,19 +223,14 @@ color: blue;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.step_number_red .number{
+.approach-step-order .approach-step-order-number{
   font-size: 30px;
   font-weight: bolder;
 }
-.approach_elements .steps:nth-child(even) .step_number_red{
-  right: 29%;
-}
-.approach_elements .steps:nth-child(odd) .step_number_red{
-  left: 29%;
-}
 /* Work */
-#ourWork{
+.our-work-section{
   background: rgb(243, 74, 13);
   color: white;
 }
@@ -230,14 +240,14 @@ color: blue;
   display: flex;
   flex-wrap: wrap;
 }
-.work{
+.work-item{
   width: 50%;
   display: flex;
 }
-.work_intro{
-  margin: 0;
+.work-intro{
+  display: flex;
 }
-.work_text{
+.work-item-text{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -245,18 +255,18 @@ color: blue;
   flex-direction: column;
   font-size: 20px;
 }
-.proj_name{
+.project-name{
   margin: 0;
   margin: 20px 0 10px 0;
 }
-.our_works .work:nth-child(3n){
+.our_works .work-item:nth-child(3n){
   flex-direction: row-reverse;
 }
-.our_works .work:nth-child(4n){
+.our_works .work-item:nth-child(4n){
   flex-direction: row-reverse;
 }
-/* inTouch */
-#inTouch{
+/* in_touch */
+.in-touch-section{
   background: rgb(71, 71, 71);
   color: white;
 }

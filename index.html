@@ -12,158 +12,171 @@
 </head>
 
 <body>
-    <main id="main">
-        <section id="header">
-                <!-- TODO: Names of id's should be with underscores -->
-            <div id="headerContacts">
-                <div class="phone"><i class="fas fa-mobile-alt"></i><span>+380552228877</span></div>
-                <div class="email"><i class="far fa-envelope"></i><span>landing@gmail.com</span></div>
+    <main id="main" class="main-block">
+        <section id="header" class="header-section">
+            <!-- TODO: Names of id's should be with underscores -->
+            <div id="header_contacts" class="header-contacts">
+                <div class="phone-icon"><i class="fas fa-mobile-alt header-icon"></i><span>+380552228877</span></div>
+                <div class="email-icon"><i class="far fa-envelope header-icon"></i><span>landing@gmail.com</span></div>
             </div>
-            <nav class="navigation">
-                <img src="/images/logo.png" alt="logo">
-                <div class="header_Home"><a href="#home">Home</a></div>
-                <div class="header_About"><a href="#about">About Us</a></div>
-                <div class="header_Approach"><a href="#ourApproach">Our Approach</a></div>
-                <div class="header_Work"><a href="#ourWork">Our Work</a></div>
-                <button id="consultation_button_nav">Free Consultation</button>
+            <nav class="navigation-bar">
+                <img src="/images/logo.png" alt="logo" class="page-logo">
+                <div class="header_Home navigation-link"><a href="#home">Home</a></div>
+                <div class="header_About navigation-link"><a href="#about">About Us</a></div>
+                <div class="header_Approach navigation-link"><a href="#our_approach">Our Approach</a></div>
+                <div class="header_Work navigation-link"><a href="#our_work">Our Work</a></div>
+                <button id="consultation_button_nav" class="consultation-button-nav">Free Consultation</button>
             </nav>
         </section>
         <!-- TODO: Add additionally classes -->
-        <section id="home">
-            <div id="home_header">
-                <h1>We Providing</h1><span class="home_text">Social Media marketing for business</span>
+        <section id="home" class="home-section">
+            <div class="section-header">
+                <h2 class="section-name">We Providing</h2>
+                <p class="section-description">Social Media marketing for
+                    business</p>
             </div>
-            <button id="consultation_button">Free Consultation</button>
+            <button id="consultation_button" class="consultation-button">Free Consultation</button>
         </section>
-        <section id="about" class="section">
-            <div class="section_header">
+        <section id="about" class="about-section section">
+            <div class="section-header">
                 <!-- TODO: make abstract names for classes, not hardcode tagname as prefix -->
-                <h2 class="h2_section_header">About Us</h2><span class="text_section_header">We are added our major
-                    Services</span>
-                <hr class="underscore">
+                <h2 class="section-name">About Us</h2>
+                <p class="section-description">We are added our major
+                    Services</p>
+                <hr class="section-underscore">
             </div>
-            <div id="services">
-                <div class="like"><img src="/images/icons/like.png" alt="Like">
-                    <h3 class="services_names">Facebook Marketing</h3><span>Lorem ipsum dolor sit amet, consectetuer
+            <div id="services" class="services">
+                <div class="services-item"><img src="/images/icons/like.png" alt="Like">
+                    <h3 class="services-names">Facebook Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit. Aenean commodo ligula eget
                         dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus.</span>
+                        ridiculus mus.</p>
                 </div>
-                <div class="book"><img src="/images/icons/book.png" alt="book">
-                    <h3 class="services_ names">Landing pages Creation</h3><span>Lorem ipsum dolor sit amet,
+                <div class="services-item"><img src="/images/icons/book.png" alt="book">
+                    <h3 class="services-names">Landing pages Creation</h3>
+                    <p>Lorem ipsum dolor sit amet,
                         consectetuer
                         adipiscing elit. Aenean commodo ligula eget
                         dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus.</span>
+                        ridiculus mus.</p>
                 </div>
-                <div class="message"><img src="/images/icons/message.png" alt="message">
-                    <h3 class="services_names">Ads management</h3> <span>Lorem ipsum dolor sit amet, consectetuer
+                <div class="services-item"><img src="/images/icons/message.png" alt="message">
+                    <h3 class="services-names">Ads management</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit. Aenean commodo ligula
                         eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus.</span>
+                        ridiculus mus.</p>
                 </div>
             </div>
         </section>
-        <section id="ourApproach" class="section">
-            <div class="section_header">
-                <h2 class="h2_section_header">Our Approach</h2><span class="text_section_header">Check Our approaches
-                    step by step (how we do it)</span>
-                <hr class="underscore">
+        <section id="our_approach" class="our-approach-section section">
+            <div class="section-header">
+                <h2 class="section-name">Our Approach</h2>
+                <p class="section-description">Check Our approaches
+                    step by step (how we do it)</p>
+                <hr class="section-underscore">
             </div>
-            <div class="approach_elements">
-                <div class="steps">
-                    <div class="step_number_red">
-                        <span class="number">1</span><span>step</span>
+            <div class="approach-items">
+                <div class="approach-step">
+                    <div class="approach-step-image">
+                        <div class="approach-step-order">
+                            <span class="approach-step-order-number">1</span><span>step</span>
+                        </div>
+                        <img src="/images/step-1.jpg" alt="step-1">
                     </div>
-                    <img src="/images/step-1.jpg" alt="step-1">
-                    <div class="steps_text">
-                        <h3 class="steps_heading">Step 1: Heading Here</h3>
-                        <span class="approach_elements_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <div class="approach-step-text">
+                        <h3 class="approach-step-heading">Step 1: Heading Here</h3>
+                        <p class="approach-step-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                             parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                            pretium quis, sem.</span>
+                            pretium quis, sem.</p>
                     </div>
                 </div>
-                <div class="steps">
-                    <div class="step_number_red">
-                        <span class="number">2</span><span>step</span>
+                <div class="approach-step">
+                    <div class="approach-step-image">
+                        <div class="approach-step-order">
+                            <span class="approach-step-order-number">2</span><span>step</span>
+                        </div><img src="/images/step-2.jpg" alt="step-2">
                     </div>
-                    <img src="/images/step-2.jpg" alt="step-2">
-                    <div class="steps_text">
-                        <h3 class="steps_heading">Step 2: Heading Here</h3>
-                        <span class="approach_elements_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <div class="approach-step-text">
+                        <h3 class="approach-step-heading">Step 2: Heading Here</h3>
+                        <p class="approach-step-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                             parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                            pretium quis, sem.</span>
+                            pretium quis, sem.</p>
                     </div>
                 </div>
-                <div class="steps">
-                    <div class="step_number_red">
-                        <span class="number">3</span><span>step</span>
+                <div class="approach-step">
+                    <div class="approach-step-image">
+                        <div class="approach-step-order">
+                            <span class="approach-step-order-number">3</span><span>step</span>
+                        </div><img src="/images/step-3.jpg" alt="step-3">
                     </div>
-                    <img src="/images/step-3.jpg" alt="step-3">
-                    <div class="steps_text">
-                        <h3 class="steps_heading">Step 3: Heading Here</h3>
-                        <span class="approach_elements_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <div class="approach-step-text">
+                        <h3 class="approach-step-heading">Step 3: Heading Here</h3>
+                        <p class="approach-step-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                             parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                            pretium quis, sem.</span>
+                            pretium quis, sem.</p>
                     </div>
                 </div>
-                <div class="steps">
-                    <div class="step_number_red">
-                        <span class="number">4</span><span>step</span>
+                <div class="approach-step">
+                    <div class="approach-step-image">
+                        <div class="approach-step-order">
+                            <span class="approach-step-order-number">4</span><span>step</span>
+                        </div><img src="/images/step-4.jpg" alt="step-4">
                     </div>
-                    <img src="/images/step-4.jpg" alt="step-4">
-                    <div class="steps_text">
-                        <h3 class="steps_heading">Step 4: Heading Here</h3>
-                        <span class="approach_elements_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <div class="approach-step-text">
+                        <h3 class="approach-step-heading">Step 4: Heading Here</h3>
+                        <p class="approach-step-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                             parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                            pretium quis, sem.</span>
+                            pretium quis, sem.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="ourWork" class="section">
-            <div class="section_header">
-                <h2 class="h2_section_header">Our Work</h2><span class="text_section_header">We are added our featured
-                    works below</span>
-                <hr class="underscore">
+        <section id="our_work" class="our-work-section section">
+            <div class="section-header">
+                <h2 class="section-name">Our Work</h2>
+                <p class="section-description">We are added our featured
+                    works below</p>
+                <hr class="section-underscore">
             </div>
             <div class="our_works">
-                <div class="work">
-                    <div class="work_text">
+                <div class="work-item">
+                    <div class="work-item-text">
                         <img src="/images/icons/work-item.png" alt="work-item">
-                        <h3 class="proj_name">Project Name</h3>
+                        <h3 class="project-name">Project Name</h3>
                         <span>Project description</span>
                     </div>
                     <div class="work-intro">
                         <img src="/images/work-1.jpg" alt="work-1">
                     </div>
                 </div>
-                <div class="work">
-                    <div class="work_text">
+                <div class="work-item">
+                    <div class="work-item-text">
                         <img src="/images/icons/work-item.png" alt="work-item">
-                        <h3 class="proj_name">Project Name</h3>
+                        <h3 class="project-name">Project Name</h3>
                         <span>Project description</span>
                     </div>
                     <div class="work-intro">
                         <img src="/images/work-2.jpg" alt="work-2"></div>
                 </div>
-                <div class="work">
-                    <div class="work_text">
+                <div class="work-item">
+                    <div class="work-item-text">
                         <img src="/images/icons/work-item.png" alt="work-item">
-                        <h3 class="proj_name">Project Name</h3>
+                        <h3 class="project-name">Project Name</h3>
                         <span>Project description</span>
                     </div>
                     <div class="work-intro">
                         <img src="/images/work-3.jpg" alt="work-3"></div>
                 </div>
-                <div class="work">
-                    <div class="work_text">
+                <div class="work-item">
+                    <div class="work-item-text">
                         <img src="/images/icons/work-item.png" alt="work-item">
-                        <h3 class="proj_name">Project Name</h3>
+                        <h3 class="project-name">Project Name</h3>
                         <span>Project description</span>
                     </div>
                     <div class="work-intro">
@@ -171,9 +184,9 @@
                 </div>
             </div>
         </section>
-        <section id="inTouch" class="section">
-            <div class="section_header">
-                <h2 class="h2_section_header">Get in touch</h2>
+        <section id="in_touch" class="in-touch-section section">
+            <div class="section-header">
+                <h2 class="section-name">Get in touch</h2>
             </div>
         </section>
     </main>
