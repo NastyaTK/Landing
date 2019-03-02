@@ -14,7 +14,6 @@
 <body>
     <main id="main" class="main-block">
         <section id="header" class="header-section">
-            <!-- TODO: Names of id's should be with underscores -->
             <div id="header_contacts" class="header-contacts">
                 <div class="phone-icon"><i class="fas fa-mobile-alt header-icon"></i><span>+380552228877</span></div>
                 <div class="email-icon"><i class="far fa-envelope header-icon"></i><span>landing@gmail.com</span></div>
@@ -28,7 +27,6 @@
                 <button id="consultation_button_nav" class="consultation-button-nav">Free Consultation</button>
             </nav>
         </section>
-        <!-- TODO: Add additionally classes -->
         <section id="home" class="home-section">
             <div class="section-header">
                 <h2 class="section-name">We Providing</h2>
@@ -37,15 +35,14 @@
             </div>
             <button id="consultation_button" class="consultation-button">Free Consultation</button>
         </section>
-        <section id="about" class="about-section section">
+        <section id="about" class="about-section section-general">
             <div class="section-header">
-                <!-- TODO: make abstract names for classes, not hardcode tagname as prefix -->
                 <h2 class="section-name">About Us</h2>
                 <p class="section-description">We are added our major
                     Services</p>
                 <hr class="section-underscore">
             </div>
-            <div id="services" class="services">
+            <div id="services-block" class="services-block">
                 <div class="services-item"><img src="/images/icons/like.png" alt="Like">
                     <h3 class="services-names">Facebook Marketing</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer
@@ -70,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section id="our_approach" class="our-approach-section section">
+        <section id="our_approach" class="our-approach-section section-general">
             <div class="section-header">
                 <h2 class="section-name">Our Approach</h2>
                 <p class="section-description">Check Our approaches
@@ -137,7 +134,7 @@
                 </div>
             </div>
         </section>
-        <section id="our_work" class="our-work-section section">
+        <section id="our_work" class="our-work-section section-general">
             <div class="section-header">
                 <h2 class="section-name">Our Work</h2>
                 <p class="section-description">We are added our featured
@@ -184,10 +181,24 @@
                 </div>
             </div>
         </section>
-        <section id="in_touch" class="in-touch-section section">
+        <section id="in_touch" class="in-touch-section section-general">
             <div class="section-header">
                 <h2 class="section-name">Get in touch</h2>
             </div>
+            <div class="in-touch-icons">
+                <div class="network-logo"><i class="fab fa-facebook-f "></i></div>
+                <div class="network-logo"><i class="fab fa-twitter"></i></div>
+                <div class="network-logo"><i class="fab fa-google-plus-g"></i></div>
+                <div class="network-logo"><i class="fab fa-linkedin-in"></i></div>
+            </div>
+            <p class="section-description in-touch-description">Subscribe in our newsletter to stay update with what is new</p>
+            <form action="" name="subscribe-form" class="subscribe-form">
+                <input type="email" placeholder="Email Adress">
+                <input type="button" value="Subscribe">
+            </form>
+        </section>
+        <section id="footer_section" class="header-section">
+            <span class="footer-section-text">Footer section</span>
         </section>
     </main>
 </body>
